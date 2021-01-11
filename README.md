@@ -24,3 +24,7 @@ Relaygroups are base on 5man group 2 melee 3 ranged - RR party, ranged, mouse2 g
 first try at making a video with obs - turned out blurry - need to look up better settings for OBS ...but you can get the gist of what this does.   
 Quick run thru of the agents, then layouts and startup of Vfx3,4,5 - partyframe buttons for RR at the end - also put in a relaygroup for ranged RR  
 https://www.youtube.com/watch?v=cyTmA_B0oS0 for the vid
+
+side note: just got this playable today - up until today, it kept crashing clients swapping from fixed to vfx layout and using RR     
+ran thru a bunch of things trying to figure it out -  once i disabled highlighter and performance, it was playable     
+messing with highlighter code to see if i can figure it out.  possibly onFrame, testing out MouseEnter/Exit atm.  
