@@ -1,0 +1,11 @@
+{
+  "globalHotkeys":[
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5"
+  ],
+  "previousWindowHotkey":"Ctrl+Alt+Z",
+  "nextWindowHotkey":"Ctrl+Alt+X"
+}

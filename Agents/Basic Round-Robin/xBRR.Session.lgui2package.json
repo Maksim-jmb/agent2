@@ -1,0 +1,557 @@
+{
+    "$schema": "http://www.lavishsoft.com/schema/lgui2Package.json",    
+    "templates": {
+        "party.allButtons":{
+            "type":"panel",
+            "name":"basicRoundRobin.allButtons",
+            "visibility":"visible",
+            "xFactor":0.75,
+            "yFactor":0.10,
+            "padding":20,
+            "borderThickness":3,
+            "borderBrush":{
+                "color":"#FF009600"
+            },
+            "backgroundBrush":{
+                "color":"#C4FFFFFF"
+            },
+            "children":[
+                {
+                    "type":"textblock",
+                    "text":"Party",
+                    "color":"#FF009600",
+                    "font":{
+                        "bold":true,
+                        "face":"Tahoma",
+                        "heightFactor":3
+                    }
+                }
+            ],
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false,
+            "inputHooks": {
+                "hook1":{
+                    "control":{
+                        "controlType": "button",
+                        "deviceType": "keyboard",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"OnButtonHook"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                }
+            }
+        },
+        "melee.allButtons":{
+            "type":"panel",
+            "name":"basicRoundRobin.allButtons",
+            "visibility":"visible",
+            "xFactor":0.75,
+            "yFactor":0.10,
+            "padding":20,
+            "borderThickness":3,
+            "borderBrush":{
+                "color":"#FF964B25"
+            },
+            "backgroundBrush":{
+                "color":"#C4FFFFFF"
+            },
+            "children":[
+                {
+                    "type":"textblock",
+                    "text":"Melee",
+                    "color":"#FF964B25",
+                    "font":{
+                        "bold":true,
+                        "face":"Tahoma",
+                        "heightFactor":3
+                    }
+                }
+            ],
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false,
+            "inputHooks": {
+                "hook1":{
+                    "control":{
+                        "controlType": "button",
+                        "deviceType": "keyboard",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"OnButtonHook"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                }
+            }
+        },
+        "ranged.allButtons":{
+            "type":"panel",
+            "name":"basicRoundRobin.allButtons",
+            "visibility":"visible",
+            "xFactor":0.75,
+            "yFactor":0.10,
+            "padding":20,
+            "borderThickness":3,
+            "borderBrush":{
+                "color":"#FF963296"
+            },
+            "backgroundBrush":{
+                "color":"#C4FFFFFF"
+            },
+            "children":[
+                {
+                    "type":"textblock",
+                    "text":"Ranged",
+                    "color":"#FF963296",
+                    "font":{
+                        "bold":true,
+                        "face":"Tahoma",
+                        "heightFactor":3
+                    }
+                }
+            ],
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false,
+            "inputHooks": {
+                "hook1":{
+                    "control":{
+                        "controlType": "button",
+                        "deviceType": "keyboard",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"OnButtonHook"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                }
+            }
+        },
+        "mouse2.allButtons":{
+            "type":"panel",
+            "name":"basicRoundRobin.allButtons",
+            "visibility":"visible",
+            "xFactor":0.75,
+            "yFactor":0.10,
+            "padding":20,
+            "borderThickness":3,
+            "borderBrush":{
+                "color":"#FF000096"
+            },
+            "backgroundBrush":{
+                "color":"#C4FFFFFF"
+            },
+            "children":[
+                {
+                    "type":"textblock",
+                    "text":"Mouse2",
+                    "color":"#FF000096",
+                    "horizontalAlignment": "center",
+                    "font":{
+                        "bold":true,
+                        "face":"Tahoma",
+                        "heightFactor":3
+                    }
+                }
+            ],
+            "acceptsKeyboardFocus":false,
+            "acceptsMouseFocus":false,
+            "inputHooks": {
+                "hook1":{
+                    "control":{
+                        "controlType": "button",
+                        "deviceType": "mouse",
+                        "minValue": 1,
+                        "maxValue": 1
+                    },
+                    "eventHandler":{
+                        "type":"method",
+                        "object":"BRRSession",
+                        "method":"OnMouseButtonHook"
+                    },
+                    "keyboardFocus": false,
+                    "mouseFocus": false
+                }
+            }
+        }
+    },
+    "elements": [
+        {
+            "type":"panel",
+            "visibility":"hidden",
+            "name":"basicRoundRobin.events"
+        },
+        {
+            "type": "window",
+            "name": "brr.window",
+            "title": "Basic Round-Robin",
+            "visibility":"hidden"            
+        },
+        {
+            "type":"panel",
+            "name":"roundrobin",
+            "visibility": "visible",
+            "width":2560,
+            "height":1080,
+            "x":0,
+            "y":0,
+            "acceptsKeyboardFocus": false,
+            "acceptsMouseFocus": false,
+            "children":[
+                {
+                    "type":"button",
+                    "name":"layout",
+                    "content":"Layout",
+                    "acceptsKeyboardFocus":false,
+                    "acceptsMouseFocus":false,
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "width":66,
+                    "height":30,
+                    "x":1152,
+                    "y":776,
+                    "borderThickness":1,
+                    "borderBrush":{
+                        "color":"#64FFFFFF",
+                        "opacity":"0.4"
+                    },
+                    "backgroundBrush":{
+                        "color":"#640000FF",
+                        "opacity":"0.2"
+                    },
+                    "eventHandlers":{
+                        "onMouse1Press":{
+                            "type":"code",
+                            "code":[
+                                "relay jmb5 WindowCharacteristics -stealth -pos -viewable 0,0 -size -viewable 2560x1080 -frame none ",
+                                "relay jmb1 WindowCharacteristics -stealth -pos -viewable 2560,0 -size -viewable 640x270 -frame none ",
+                                "relay jmb2 WindowCharacteristics -stealth -pos -viewable 2560,270 -size -viewable 640x270 -frame none ",
+                                "relay jmb3 WindowCharacteristics -stealth -pos -viewable 2560,540 -size -viewable 640x270 -frame none ",
+                                "relay jmb4 WindowCharacteristics -stealth -pos -viewable 2560,810 -size -viewable 640x270 -frame none ",
+                                "relay jmb6 WindowCharacteristics -pos -viewable 3200,0 -size -viewable 640x270 -frame none ",
+                                "relay party LGUI2.Element[party]:SetVisibility[visible]",
+                                "relay party LGUI2.Element[partytank]:SetVisibility[hidden]",
+                                "relay party LGUI2.Element[partyhealer]:SetVisibility[hidden]",
+                                "uplink focus jmb5"
+                            ]
+                        },
+                        "onMouse1Release":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[party]"
+                            }
+                        },
+                        "onMouse2Press":{
+                            "type":"code",
+                            "code":[
+                                "relay jmb4 WindowCharacteristics -stealth -pos -viewable 0,0 -size -viewable 2560x1080 -frame none ",
+                                "relay jmb1 WindowCharacteristics -stealth -pos -viewable 2560,0 -size -viewable 640x270 -frame none ",
+                                "relay jmb2 WindowCharacteristics -stealth -pos -viewable 2560,270 -size -viewable 640x270 -frame none ",
+                                "relay jmb3 WindowCharacteristics -stealth -pos -viewable 2560,540 -size -viewable 640x270 -frame none ",
+                                "relay jmb5 WindowCharacteristics -stealth -pos -viewable 2560,810 -size -viewable 640x270 -frame none ",
+                                "relay jmb6 WindowCharacteristics -pos -viewable 3200,0 -size -viewable 640x270 -frame none ",
+                                "uplink focus jmb4"
+                            ]
+                        },
+                        "onMouse2Release":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[party]"
+                            }
+                        },
+                        "onMouse3Press":{
+                            "type":"code",
+                            "code":[
+                                "relay jmb3 WindowCharacteristics -stealth -pos -viewable 0,0 -size -viewable 2560x1080 -frame none ",
+                                "relay jmb1 WindowCharacteristics -stealth -pos -viewable 2560,0 -size -viewable 640x270 -frame none ",
+                                "relay jmb2 WindowCharacteristics -stealth -pos -viewable 2560,270 -size -viewable 640x270 -frame none ",
+                                "relay jmb4 WindowCharacteristics -stealth -pos -viewable 2560,540 -size -viewable 640x270 -frame none ",
+                                "relay jmb5 WindowCharacteristics -stealth -pos -viewable 2560,810 -size -viewable 640x270 -frame none ",
+                                "relay jmb6 WindowCharacteristics -pos -viewable 3200,0 -size -viewable 640x270 -frame none ",
+                                "uplink focus jmb3"
+                            ]
+                        },
+                        "onMouse3Release":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[party]"
+                            }
+                        },
+                        "onMouseWheel":{
+                            "type":"method",
+                            "object":"BRRSession",
+                            "method":"ApplyWindowLayout5"
+                        }
+                    }
+                },
+                {
+                    "type":"button",
+                    "name":"rrparty",
+                    "content":"RR",
+                    "acceptsKeyboardFocus":false,
+                    "acceptsMouseFocus":false,
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "width":66,
+                    "height":30,
+                    "x":1336,
+                    "y":776,
+                    "borderThickness":1,
+                    "borderBrush":{
+                        "color":"#64FFFFFF",
+                        "opacity":"0.4"
+                    },
+                    "backgroundBrush":{
+                        "color":"#640000FF",
+                        "opacity":"0.2"
+                    },
+                    "eventHandlers":{
+                        "onMouse1Press":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[party]"
+                            }
+                        },
+                        "onMouse2Press":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[melee]"
+                            }
+                        },
+                        "onMouse3Press":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[ranged]"
+                            }
+                        },
+                        "onMouseWheel":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[mouse2]"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type":"button",
+                    "name":"layout",
+                    "content":"Quick-Party",
+                    "acceptsKeyboardFocus":false,
+                    "acceptsMouseFocus":false,
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "width":65,
+                    "height":30,
+                    "x":1055,
+                    "y":810,
+                    "borderThickness":1,
+                    "borderBrush":{
+                        "color":"#64FFFFFF",
+                        "opacity":"0.4"
+                    },
+                    "backgroundBrush":{
+                        "color":"#64009600",
+                        "opacity":"0.2"
+                    },
+                    "eventHandlers":{
+                        "onMouse1Press":{
+                            "type":"code",
+                            "code":[
+                                "relay jmb2 WindowCharacteristics -pos -viewable 2560,0 -size -viewable 640x270 -frame none ",
+                                "relay jmb3 WindowCharacteristics -pos -viewable 2560,270 -size -viewable 640x270 -frame none ",
+                                "relay jmb4 WindowCharacteristics -pos -viewable 2560,540 -size -viewable 640x270 -frame none ",
+                                "relay jmb5 WindowCharacteristics -pos -viewable 2560,810 -size -viewable 640x270 -frame none ",
+                                "relay jmb6 WindowCharacteristics -pos -viewable 3200,0 -size -viewable 640x270 -frame none ",
+                                "relay jmb1 WindowCharacteristics -pos -viewable 0,0 -size -viewable 2560x1080 -frame none "
+                            ]
+                        },
+                        "onMouse1Release":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[party]"
+                            }
+                        },
+                        "onMouse2Press":{
+                            "type":"code",
+                            "code":[
+                                "relay jmb1 WindowCharacteristics -stealth -pos -viewable 2560,0 -size -viewable 640x270 -frame none ",
+                                "relay jmb3 WindowCharacteristics -stealth -pos -viewable 2560,270 -size -viewable 640x270 -frame none ",
+                                "relay jmb4 WindowCharacteristics -stealth -pos -viewable 2560,540 -size -viewable 640x270 -frame none ",
+                                "relay jmb5 WindowCharacteristics -stealth -pos -viewable 2560,810 -size -viewable 640x270 -frame none ",
+                                "relay jmb6 WindowCharacteristics -pos -viewable 3200,0 -size -viewable 640x270 -frame none ",
+                                "relay jmb2 WindowCharacteristics -pos -viewable 0,0 -size -viewable 2560x1080 -frame none "
+                            ]
+                        },
+                        "onMouse2Release":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[party]"
+                            }
+                        },                        
+                        "onMouse3Press":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[party]"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type":"button",
+                    "name":"layout",
+                    "content":"Quick-Range",
+                    "acceptsKeyboardFocus":false,
+                    "acceptsMouseFocus":false,
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "width":66,
+                    "height":30,
+                    "x":1244,
+                    "y":810,
+                    "borderThickness":1,
+                    "borderBrush":{
+                        "color":"#64FFFFFF",
+                        "opacity":"0.4"
+                    },
+                    "backgroundBrush":{
+                        "color":"#64963296",
+                        "opacity":"0.2"
+                    },
+                    "eventHandlers":{
+                        "onMouse1Press":{
+                            "type":"code",
+                            "code":[
+                                "relay jmb1 WindowCharacteristics -stealth -pos -viewable 2560,0 -size -viewable 640x270 -frame none ",
+                                "relay jmb3 WindowCharacteristics -stealth -pos -viewable 2560,270 -size -viewable 640x270 -frame none ",
+                                "relay jmb4 WindowCharacteristics -stealth -pos -viewable 2560,540 -size -viewable 640x270 -frame none ",
+                                "relay jmb5 WindowCharacteristics -stealth -pos -viewable 2560,810 -size -viewable 640x270 -frame none ",
+                                "relay jmb6 WindowCharacteristics -pos -viewable 3200,0 -size -viewable 640x270 -frame none ",
+                                "relay jmb2 WindowCharacteristics -pos -viewable 0,0 -size -viewable 2560x1080 -frame none "
+                            ]
+                        },
+                        "onMouse1Release":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[ranged]"
+                            }
+                        },
+                        "onMouse2Press":{
+                            "type":"code",
+                            "code":[
+                                "relay other#1 WindowCharacteristics -stealth -pos -viewable 2560,0 -size -viewable 640x270 -frame none ",
+                                "relay other#2 WindowCharacteristics -stealth -pos -viewable 2560,270 -size -viewable 640x270 -frame none ",
+                                "relay other#3 WindowCharacteristics -stealth -pos -viewable 2560,540 -size -viewable 640x270 -frame none ",
+                                "relay other#4 WindowCharacteristics -stealth -pos -viewable 2560,810 -size -viewable 640x270 -frame none ",
+                                "relay jmb6 WindowCharacteristics -pos -viewable 3200,0 -size -viewable 640x270 -frame none "
+                            ]
+                        },
+                        "onMouse2Release":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[ranged]"
+                            }
+                        },
+                        "onMouse3Press":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[ranged]"
+                            }
+                        }
+                    }
+                },
+                {
+                    "type":"button",
+                    "name":"layout",
+                    "content":"Quick-M2",
+                    "acceptsKeyboardFocus":false,
+                    "acceptsMouseFocus":false,
+                    "keyboardFocus": false,
+                    "mouseFocus": false,
+                    "width":66,
+                    "height":30,
+                    "x":1433,
+                    "y":810,
+                    "borderThickness":1,
+                    "borderBrush":{
+                        "color":"#64FFFFFF",
+                        "opacity":"0.4"
+                    },
+                    "backgroundBrush":{
+                        "color":"#64000096",
+                        "opacity":"0.2"
+                    },
+                    "eventHandlers":{
+                        "onMouse1Press":{
+                            "type":"code",
+                            "code":[
+                                "relay jmb6 WindowCharacteristics -pos -viewable 2560,0 -size -viewable 1280x1080 -frame none ",
+                                "relay party WindowCharacteristics -pos -viewable 0,0 -size -viewable 2560x1080 -frame none "
+                            ]
+                        },
+                        "onMouse1Release":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[mouse2]"
+                            }
+                        },
+                        "onMouse3Press":{
+                            "type":"code",
+                            "code":[
+                                "relay jmb6 WindowCharacteristics -pos -viewable 2560,0 -size -viewable 1280x1080 -frame none ",
+                                "relay party WindowCharacteristics -pos -viewable 0,0 -size -viewable 2560x1080 -frame none "
+                            ]
+                        },
+                        "onMouse3Release":{
+                            "type":"task",
+                            "taskManager":"brrSession",
+                            "task":{
+                                "type":"ls1.code",
+                                "start":"BRRSession:ToggleProfile[mouse2]"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
