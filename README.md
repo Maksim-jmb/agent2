@@ -11,7 +11,7 @@ Vfx3 - grid: 3 rows, 3 columns....grow to the right
 Vfx4 - grid: 4 rows, 3 columns....grow to the right     
 Vfx5 - grid: 5 rows, 5 columns....grow to the bottom
 
-Utility toggle buttons are on the left side of the screen: All, RR -not used anymore, Party, ActionBars, UI - not used
+Utility toggle buttons are on the left side of the screen: All, RR -not used anymore, Party, ActionBars, UI - not used     
 Toggle: Mouse1 on, MouseWheel off
 
 Party Buttons are the only function ones atm - they overlay my party frames     
