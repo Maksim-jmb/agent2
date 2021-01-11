@@ -14,7 +14,7 @@ Vfx5 - grid: 4 rows, 5 columns....grow to the bottom
 Utility toggle buttons are on the left side of the screen: All, RR -not used anymore, Party, ActionBars, UI - not used     
 Toggle: Mouse1 on, MouseWheel off
 
-Party Buttons are the only functioning ones atm besides the toggles - they overlay half of my party frames - using Clique atm on the other half.     
+Party Buttons are the only functioning ones atm besides the toggles - they overlay half of my party frames - using Clique atm on the other side.     
 Mouse1 - focus toon     
 Mouse2:  1st btn - toggle on RR for relaygroup party. Kicks in Fixed Layout and shifts dxnothing over     
 Mouse2:  2nd btn - toggle on RR ranged group. Kicks in Fixed Layout and shifts dxnothing over      
