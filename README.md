@@ -1,8 +1,8 @@
 # agent2
 Vfx/Stacked Panel test agent - with clickbars for swapping window layouts from RR/Vfx, and relay group RR's
 
-work in progress - current agent i'm throwing my ideas at, didn't have time to try and get Vfx nicely into Basic Agent so I left it as is.
-Everything will change with new updates - so i'm just spending time on testing things rather then cleaning things up nicely.
+work in progress - current agent i'm throwing my ideas at, didn't have time to try and get Vfx to work in the Basic Agent so I left it as is.
+Everything will change with new updates from Lax - just spending time on testing/learning more about LavishScript atm.  I'll probably update this one as I learn more.
 
 Setup for 2560x1080 - 1920x1080 monitor layout
 Vfx view - Mouse2 or MouseWheel for selecting - they are also tied into swapping out of RR fixed Layout
@@ -16,7 +16,9 @@ Toggle: Mouse1 on, MouseWheel off
 
 Party Buttons are the only function ones atm - they overlay my party frames     
 Mouse1 - focus toon     
-Mouse2:  1st btn - toggle on RR for relaygroup party. 2nd btn - toggle on RR ranged group. 3rd button - disable RR. 4rth btn - toggle on RR mouse2 all 
+Mouse2:  1st btn - toggle on RR for relaygroup party. 2nd btn - toggle on RR ranged group. 3rd button - disable RR. 4rth btn - toggle on RR mouse2 all
+
+Relaygroups are base on 5man group 2 melee 3 ranged - RR party, ranged, mouse2 groupings.
 
 first try at making a video with obs - turned out blurry - need to look up better settings for OBS ...but you can get the gist of what this does.   
 Quick run thru of the agents, then layouts and startup of Vfx3,4,5 - partyframe buttons for RR at the end - also put in a relaygroup for ranged RR  
