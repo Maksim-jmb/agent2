@@ -1,5 +1,5 @@
 # agent2
-Vfx test agent - with clickbars for swapping window layouts from RR/Vfx, and relay group RR's
+Vfx/Stacked Panel test agent - with clickbars for swapping window layouts from RR/Vfx, and relay group RR's
 
 work in progress - current agent i'm throwing my ideas at, didn't have time to try and get Vfx nicely into Basic Agent so I left it as is.
 Everything will change with new updates - so i'm just spending time on testing things rather then cleaning things up nicely.
