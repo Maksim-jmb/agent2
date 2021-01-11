@@ -27,4 +27,6 @@ https://www.youtube.com/watch?v=cyTmA_B0oS0 for the vid
 
 side note: just got this playable today - up until today, it kept crashing clients swapping from fixed to vfx layout and using RR     
 ran thru a bunch of things trying to figure it out -  once i disabled highlighter and performance, it was playable     
-messing with highlighter code to see if i can figure it out.  possibly onFrame, testing out MouseEnter/Exit atm.  
+messing with highlighter code to see if i can figure it out.  possibly onFrame, testing out MouseEnter/Exit atm.
+
+** delete line 347 of BL.Uplink.iss if your games aren't listed correctly, I have dxNothing listed first and erase it from view
