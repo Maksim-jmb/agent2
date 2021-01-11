@@ -14,9 +14,10 @@ Vfx5 - grid: 5 rows, 5 columns....grow to the bottom
 Utility toggle buttons are on the left side of the screen: All, RR -not used anymore, Party, ActionBars, UI - not used     
 Toggle: Mouse1 on, MouseWheel off
 
-Party Buttons are the only function ones atm - they overlay my party frames     
+Party Buttons are the only functioning ones atm besides the toggles - they overlay my party frames     
 Mouse1 - focus toon     
-Mouse2:  1st btn - toggle on RR for relaygroup party. 2nd btn - toggle on RR ranged group. 3rd button - disable RR. 4rth btn - toggle on RR mouse2 all
+Mouse2:  1st btn - toggle on RR for relaygroup party. 2nd btn - toggle on RR ranged group. 3rd button - disable RR. 4rth btn - toggle on RR mouse2 all     
+MouseWheel: RR Disable
 
 Relaygroups are base on 5man group 2 melee 3 ranged - RR party, ranged, mouse2 groupings.
 
