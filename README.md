@@ -37,4 +37,5 @@ messing with highlighter code to see if i can figure it out.  possibly onFrame, 
 
 gameplay vid https://www.youtube.com/watch?v=UTv9qWHrfzY     
 Monk tank, Priest heal, Mage, Warlock, Warrior - using EMA, Clique, GSE, Elvui - showing Evlui setup with the buttons - quick run thru of RR Party, Ranged, Mouse2 for looting/gathering - trying a mix with melee classes to see how IWT works.  Have roll in the sequence with monk - goes rolling off sometimes if the target is close...     
-also use a razer keypad - try to use buttons as much as i can without using the keyboard.  Muscle memory isn't there yet with this new style of play...not the smoothest gameplay on my end.....ugh
+also use a razer keypad - try to use buttons as much as i can without using the keyboard.  Muscle memory isn't there yet with this new style of play...not the smoothest gameplay on my end.....ugh   
+** video is with performance and highlighter agent off....haven't figured that out yet
