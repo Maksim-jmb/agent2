@@ -4,7 +4,7 @@ Vfx/Stacked Panel test agent - with clickbars for swapping window layouts from R
 work in progress - current agent i'm throwing my ideas at, didn't have time to try and get Vfx to work in the Basic Agent so I left it as is.
 Everything will change with new updates from Lax - just spending time on testing/learning more about LavishScript atm.  I'll probably update this one as I learn more.
 
-Setup for 2560x1080 - 1920x1080 monitor layout
+Setup for 2560x1080 - 1920x1080 monitor layout     
 Vfx view - Mouse2 or MouseWheel for selecting - they are also tied into swapping out of RR fixed Layout
 
 Vfx3 - grid: 3 rows, 3 columns....grow to the right     
