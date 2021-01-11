@@ -28,7 +28,7 @@ first try at making a video with obs - turned out blurry - need to look up bette
 Quick run thru of the agents, then layouts and startup of Vfx3,4,5 - partyframe buttons for RR at the end - also put in a relaygroup for ranged RR  
 https://www.youtube.com/watch?v=cyTmA_B0oS0 for the vid
 
-side note: combining all the test ideas and agents kept crashing clients with quick swapping from fixed to vfx layout and using RR     
+side note: combining the test ideas and agents kept crashing clients with quick swapping from fixed to vfx layout and using RR     
 ran thru a bunch of things trying to figure it out -  once i disabled highlighter and performance, it ran better     
 haven't messed with performance yet - probably not an issue, starting with highlighter first
 messing with highlighter code to see if i can figure it out.  possibly onFrame, testing out MouseEnter/Exit atm.
