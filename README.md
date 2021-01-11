@@ -16,7 +16,10 @@ Toggle: Mouse1 on, MouseWheel off
 
 Party Buttons are the only functioning ones atm besides the toggles - they overlay half of my party frames - using Clique atm on the other half.     
 Mouse1 - focus toon     
-Mouse2:  1st btn - toggle on RR for relaygroup party. 2nd btn - toggle on RR ranged group. 3rd button - disable RR. 4rth btn - toggle on RR mouse2 all     
+Mouse2:  1st btn - toggle on RR for relaygroup party. Kicks in Fixed Layout and shifts dxnothing over     
+Mouse2:  2nd btn - toggle on RR ranged group. Kicks in Fixed Layout and shifts dxnothing over      
+Mouse2:  3rd button - disable RR. Kicks back to Vfx View     
+4rth btn - toggle on RR mouse2 all.  Kicks back to Vfx View     
 MouseWheel: RR Disable
 Driving with my healer in Slot2 - GHK for slot2 also kicks it back to vfx view/rr disable
 
