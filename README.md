@@ -20,8 +20,7 @@ Mouse2:  1st btn - toggle on RR for relaygroup party. Kicks in Fixed Layout and 
 Mouse2:  2nd btn - toggle on RR ranged group. Kicks in Fixed Layout and shifts dxnothing over      
 Mouse2:  3rd button - disable RR. Kicks back to Vfx View     
 Mouse2:  4rth btn - toggle on RR mouse2 all.  Kicks back to Vfx View     
-MouseWheel: RR Disable
-Driving with my healer in Slot2 - GHK for slot2 also kicks it back to vfx view/rr disable
+MouseWheel: RR Disable - driving mainly with my healer in Slot2 - GHK for slot2 also kicks it back to vfx view/rr disable
 
 Relaygroups are base on 5man group 2 melee 3 ranged - RR party, ranged, mouse2 groupings.
 
