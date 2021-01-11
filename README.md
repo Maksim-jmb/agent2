@@ -28,9 +28,9 @@ first try at making a video with obs - turned out blurry - need to look up bette
 Quick run thru of the agents, then layouts and startup of Vfx3,4,5 - partyframe buttons for RR at the end - also put in a relaygroup for ranged RR  
 https://www.youtube.com/watch?v=cyTmA_B0oS0 for the vid
 
-side note: up until today, it kept crashing clients swapping from fixed to vfx layout and using RR     
+side note: combining all the test ideas and agents kept crashing clients with quick swapping from fixed to vfx layout and using RR     
 ran thru a bunch of things trying to figure it out -  once i disabled highlighter and performance, it ran better     
-havent' messed with performance yet - probably not an issue, starting with highlighter first
+haven't messed with performance yet - probably not an issue, starting with highlighter first
 messing with highlighter code to see if i can figure it out.  possibly onFrame, testing out MouseEnter/Exit atm.
 
 ** delete line 347 of BL.Uplink.iss if your games aren't listed correctly, I have dxNothing listed first and erase it from view
