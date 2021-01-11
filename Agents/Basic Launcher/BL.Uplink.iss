@@ -51,11 +51,11 @@ objectdef blUplink
             "virtualFiles":[
                 {
                     "pattern":"*/Config.WTF",
-                    "replacement":"{1}/Config.Generic.JMB20.WTF"
+                    "replacement":"{1}/Config.Generic.JMB${Slot}.WTF"
                 },
                 {
                     "pattern":"Software/Blizzard Entertainment/World of Warcraft/Client/\*",
-                    "replacement":"Software/Blizzard Entertainment/World of Warcraft/Client-JMB20/{1}"
+                    "replacement":"Software/Blizzard Entertainment/World of Warcraft/Client-JMB${Slot}/{1}"
                 }
             ]
         }
